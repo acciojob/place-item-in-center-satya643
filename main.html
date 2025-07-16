@@ -3,7 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <title>Flexbox Centering</title>
-  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Make holder fill the viewport and center its content */
+    .holder {
+      display: flex;
+      justify-content: center;  /* horizontal centering */
+      align-items: center;      /* vertical centering */
+      width: 100vw;             /* full viewport width */
+      height: 100vh;            /* full viewport height */
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Style item-1 */
+    .item-1 {
+      width: 100px;
+      height: 100px;
+      background-color: red;
+    }
+
+    /* Reset body default margins just in case */
+    body {
+      margin: 0;
+      padding: 0;
+    }
+  </style>
 </head>
 <body>
   <div class="holder">
